@@ -10,41 +10,36 @@ import RoterFaden from './pages/RoterFaden';
 import Satzung from './pages/Satzung';
 import Veranstaltungen from './pages/Veranstaltungen';
 import Vorstand from './pages/Vorstand';
+import Footer from './pages/Footer';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      countries: []
-    }
-    // api.loadUser();
-  }
-
-  handleLogoutClick(e) {
-    api.logout()
-  }
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <NavLink to="/" exact>Home</NavLink>
-          <NavLink to="/about">Vorstand</NavLink>
-          <NavLink to="/portfolio">Presseecho</NavLink>
-          <NavLink to="/blog">Veranstaltungen</NavLink>
+          <NavLink to="/vorstand">Vorstand</NavLink>
+          <NavLink to="/presse">Presseecho</NavLink>
+          <NavLink to="/veranstaltungen">Veranstaltungen</NavLink>
+          <NavLink to="/beitreten">Mitglied werden</NavLink>
           <NavLink to="/berichte">Berichte</NavLink>
+          <NavLink to="/roterfaden">Roter Faden</NavLink>
+          <NavLink to="/satzung">Satzung</NavLink>
           <NavLink to="/imprint">Impressum</NavLink>
           <NavLink to="/links">Links</NavLink>
         </header>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Presseecho} />
+          <Route path="/vorstand" component={Vorstand} />
+          <Route path="/presse" component={Presseecho} />
           <Route path="/berichte" component={Berichte} />
-          <Route path="/webdev" component={Webdev} />
-          <Route path="/design" component={Design} />
-          <Route path="/blog" component={Veranstaltungen} />
+          <Route path="/beitreten" component={MitgliedWerden} />
+          <Route path="/links" component={Links} />
+          <Route path="/roterfaden" component={RoterFaden} />
+          <Route path="/satzung" component={Satzung} />
+          <Route path="/imprint" component={Impressum} />
+          <Route path="/veranstaltungen" component={Veranstaltungen} />
           <Route path="/imprint" component={Impressum} />
           <Route render={() => <h2>404</h2>} />
         </Switch>

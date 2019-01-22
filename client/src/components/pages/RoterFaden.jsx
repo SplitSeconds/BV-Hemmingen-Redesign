@@ -1,24 +1,17 @@
-// Example of component you can copy/paste to create new components
-
-
 import React, { Component } from 'react';
-// import { Route, Switch, NavLink, Link } from 'react-router-dom';
-// import api from '../api';
-// import './Sample.css';
 
-class Sample extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //   }
-  // }
+class RoterFaden extends Component {
   render() {                
     return (
-      <div className="Sample">
-        Hello Sample
+      <div className="roterfaden">
+        <h2>Roter Faden</h2>
+        
+        <p>...</p>
+
+        <img src="http://www.buergerverein-hemmingen.de/fadenkarte.jpg" alt="Karte Hemmingen" className="rf-karte"></img>
       </div>
     );
   }
 }
 
-export default Sample;
+export default RoterFaden;

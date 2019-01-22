@@ -1,26 +1,32 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/about', (req, res, next) => {
+router.get('/vorstand', (req, res, next) => {
   res.json({
     secret: 42,
     user: req.user
   });
 });
 
-router.get('/portfolio', (req, res, next) => {
+router.get('/presse', (req, res, next) => {
+  res.json();
+});
+router.get('/beitreten', (req, res, next) => {
+  res.json();
+});
+router.get('/roterfaden', (req, res, next) => {
+  res.json();
+});
+router.get('/satzung', (req, res, next) => {
+  res.json();
+});
+router.get('/veranstaltungen', (req, res, next) => {
   res.json({
     secret: 42,
     user: req.user
   });
 });
-router.get('/webdev', (req, res, next) => {
-  res.json({
-    secret: 42,
-    user: req.user
-  });
-});
-router.get('/design', (req, res, next) => {
+router.get('/berichte', (req, res, next) => {
   res.json({
     secret: 42,
     user: req.user
@@ -34,7 +40,7 @@ router.get('/imprint', (req, res, next) => {
   });
 });
 
-router.get('/blog', (req, res, next) => {
+router.get('/links', (req, res, next) => {
   res.json({
     secret: 42,
     user: req.user

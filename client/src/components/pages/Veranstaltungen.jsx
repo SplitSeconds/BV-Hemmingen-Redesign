@@ -1,30 +1,17 @@
 import React, { Component } from 'react';
 
-class Blog extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      countries: []
-    }
-  }
-  render() {
+class Veranstaltungen extends Component {
+  render() {                
     return (
-      <div className="Countries">
-        <h2>Blog</h2>
-       
+      <div className="veranstaltungen">
+        <h2>Aktuelle Veranstaltungen des Bürgervereins</h2>
+        Datum
+        Ort 
+        Anmeldung
+        WAS
       </div>
     );
   }
-  componentDidMount() {
-    // api.getCountries()
-    //   .thes Blog => {
-    //     console.log(countries)
-    //     this.setState({
-    //       countries: countries
-    //     })
-    //   })
-    //   .catch(err => console.log(err))
-  }
 }
 
-export default Blog;
+export default Veranstaltungen;
