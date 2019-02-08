@@ -1,7 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif; 
+  background-image: url("https://res.cloudinary.com/dpjdxqrce/image/upload/v1549640960/Buev_Logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
 
 .info {
   margin: 20px;
@@ -16,17 +21,14 @@ body {
 
 .App {
   text-align: center; }
-  .App .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px; }
   .App .App-header {
-    background-color: grey;
+    background-color: white;
     padding: 20px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center; }
     .App .App-header a {
-      color: white;
+      color: black;
       padding: 0 5px;
       text-decoration: unset; }
     .App .App-header a.active {

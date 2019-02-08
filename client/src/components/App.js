@@ -19,9 +19,10 @@ class App extends Component {
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <NavLink to="/" exact>Home</NavLink>
-          <NavLink to="/vorstand">Vorstand</NavLink>
+          <NavLink to="/vorstand">Vorstand & Kontakt</NavLink>
           <NavLink to="/presse">Presseecho</NavLink>
           <NavLink to="/veranstaltungen">Veranstaltungen</NavLink>
+          <image src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1549646376/Header.jpg" alt="Logo" />
           <NavLink to="/beitreten">Mitglied werden</NavLink>
           <NavLink to="/berichte">Berichte</NavLink>
           <NavLink to="/roterfaden">Roter Faden</NavLink>

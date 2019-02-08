@@ -8,8 +8,7 @@ class Home extends Component {
         <div className="image">
         </div>
         <div className="text">
-          <h2>Bürgerverein Hemmingen</h2>
-          <h3>Herzlich Willkommen!</h3>
+          <h2>Willkommen auf der Homepage des Bürgervereins  Hemmingen e. V.!</h2>
           <h4>Warum ein Bürgerverein?</h4>
           <p>Unsere Zeit ist geprägt durch Politikverdrossenheit, Kleinfamilie und Single-Dasein. 
              Deshalb haben Hemminger Bürgerinnen und Bürger 1985 einen Verein gegründet, um Gemeinsinn und Bürgergeist zu stärken. 
@@ -24,15 +23,7 @@ class Home extends Component {
             <li>Gemeinsame Exkursionen und Besichtigungen mit Kulturprogramm</li>
           </ul>
           <p>Der Verein arbeitet überparteilich  und  demokratisch. Der Jahresbeitrag beträgt  15 Euro. Spenden  sind     steuerlich  absetzbar, da der Verein als gemeinnützig  anerkannt   ist. Er lebt von  den Ideen und dem Engagement der Mitglieder, daher  sind Anregungen    immer  willkommen.</p>
-          <hr></hr>
-          <h3>So können Sie uns erreichen:</h3>
-          <p>per Post:     Bürgerverein Hemmingen e. V., Postfach 1141, 30953 Hemmingen
-per Mail:     info@buergerverein-hemmingen.de 
-Konto:  Sparkasse Hannover
-
-BIC: SPKHDE2HXXX
-Vereinskonto: IBAN: DE50 2505 0180 0015 0051 01
-Reisekonto    : IBAN: DE55 2505 0180 0910 2756 29</p>
+          
         </div>
       </div>
     );
