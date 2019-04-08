@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; 
+  font-family: sans-serif;
   background-image: url("https://res.cloudinary.com/dpjdxqrce/image/upload/v1549640960/Buev_Logo.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
 
 .info {
   margin: 20px;
@@ -22,11 +21,18 @@ body {
 .App {
   text-align: center; }
   .App .App-header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     color: black;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: column; }
+    .App .App-header .header-img {
+      margin-bottom: 10px; }
+    .App .App-header .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-direction: row; }
     .App .App-header a {
       color: black;
       padding: 0 5px;
@@ -52,24 +58,44 @@ body {
   font-size: 1.2em; }
 
 .home-wrapper {
-  position: relative; }
+  position: relative;
+  margin-top: 50px; }
 
 .text {
   position: absolute;
-  left: 0;
-  top: 100px;
-  right: 0;
-  bottom: 0; }
+  left: 70px;
+  top: 90px;
+  right: 70px;
+  bottom: 0;
+  text-align: justify; }
 
 .home-bg-picture {
   width: 100vw; }
 
-.projects {
-  display: flex;
-  margin: 10px; }
+.front-list {
+  text-align: center;
+  list-style-position: inside; }
 
-.project {
-  margin: 10px; }
+.col1-h5 {
+  margin-bottom: 0.9px !important; }
+
+.vorstand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.vorstand-col1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  text-align: left; }
+
+.vorstand-col2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: left;
+  align-content: stretch; }
 
 .btn-link {
   text-decoration: none !important;

@@ -17,6 +17,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url("https://res.cloudinary.com/dpjdxqrce/image/upload/v1549640960/Buev_Logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .info {
@@ -37,20 +41,26 @@ body {
 .App {
   text-align: center;
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
-
   .App-header {
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    .header-img {
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
 
     a {
-      color: white;
+      color: black;
       padding: 0 5px;
       text-decoration: unset;
     }
@@ -96,28 +106,48 @@ body {
 }
 .home-wrapper {
   position: relative;
+  margin-top: 50px;
 }
 .text {
   position: absolute;
-  left: 0;
-  top: 100px;
-  right: 0;
+  left: 70px;
+  top: 90px;
+  right: 70px;
   bottom: 0;
+  text-align: justify
 }
 .home-bg-picture {
   width: 100vw;
 }
+.front-list{
+    text-align: center;
+    list-style-position: inside;
+}
 
 // --------------------
-// Style for WebDev component
-.projects {
+// Style for Vorstand component
+.col1-h5{
+margin-bottom: 0.9px !important; 
+}
+.vorstand {
   display: flex;
-  margin: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+.vorstand-col1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  text-align: left;
+}
+.vorstand-col2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: left;
+  align-content: stretch;
 }
 
-.project {
-  margin: 10px;
-}
 
 .btn-link {
   text-decoration: none !important;

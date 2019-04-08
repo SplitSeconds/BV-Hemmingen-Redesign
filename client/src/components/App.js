@@ -17,18 +17,21 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <NavLink to="/" exact>Home</NavLink>
-          <NavLink to="/vorstand">Vorstand & Kontakt</NavLink>
-          <NavLink to="/presse">Presseecho</NavLink>
-          <NavLink to="/veranstaltungen">Veranstaltungen</NavLink>
-          <image src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1549646376/Header.jpg" alt="Logo" />
-          <NavLink to="/beitreten">Mitglied werden</NavLink>
-          <NavLink to="/berichte">Berichte</NavLink>
-          <NavLink to="/roterfaden">Roter Faden</NavLink>
-          <NavLink to="/satzung">Satzung</NavLink>
-          <NavLink to="/imprint">Impressum</NavLink>
-          <NavLink to="/links">Links</NavLink>
+          <div className="header-img">
+            <img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1554727385/Header_new.png" alt="Logo" className="logo" />
+          </div>
+          <div className="nav-links">  
+            <NavLink to="/" exact>Home</NavLink>
+            <NavLink to="/vorstand">Vorstand & Kontakt</NavLink>
+            <NavLink to="/presse">Presseecho</NavLink>
+            <NavLink to="/veranstaltungen">Veranstaltungen</NavLink>   
+            <NavLink to="/beitreten">Mitglied werden</NavLink>
+            <NavLink to="/berichte">Berichte</NavLink>
+            <NavLink to="/roterfaden">Roter Faden</NavLink>
+            <NavLink to="/satzung">Satzung</NavLink>
+            <NavLink to="/imprint">Impressum</NavLink>
+            <NavLink to="/links">Links</NavLink>
+          </div>
         </header>
         <Switch>
           <Route path="/" exact component={Home} />
