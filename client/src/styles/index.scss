@@ -42,8 +42,8 @@ body {
   text-align: center;
 
   .App-header {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
     color: black;
     display: flex;
     justify-content: center;
@@ -51,6 +51,10 @@ body {
 
     .header-img {
       margin-bottom: 10px;
+    }
+    .logo{
+      width: 35vw;
+      height: auto;
     }
 
     .nav-links {
@@ -104,6 +108,9 @@ body {
     font-size: 1.2em;
   }
 }
+.headline{
+  margin-top: 200px !important;
+}
 .home-wrapper {
   position: relative;
   margin-top: 50px;
@@ -120,8 +127,9 @@ body {
   width: 100vw;
 }
 .front-list{
-    text-align: center;
+    text-align: left;
     list-style-position: inside;
+    text-indent: 25vw;
 }
 
 // --------------------
@@ -163,4 +171,44 @@ margin-bottom: 0.9px !important;
 }
 .about {
   margin: 20px;
+}
+
+// --------------------
+// Style for RoterFaden component
+.roterFaden-imgs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+.rf-img{
+  width: 20vw;
+  height: 20vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.faden-txt{
+  text-align: justify;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.thead {
+  border: 1px solid black;
+}
+.table{
+  margin: 10px auto;
+  border: 1px solid black; 
+ 
+
+  th {
+    border: 1px solid black;
+  }
+  td{
+    text-align: justify;
+    border: 1px solid black; 
+  }
+}
+.indent{
+  text-indent: 65px;
 }

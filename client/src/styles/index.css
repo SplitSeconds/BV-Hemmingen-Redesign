@@ -21,14 +21,17 @@ body {
 .App {
   text-align: center; }
   .App .App-header {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
     color: black;
     display: flex;
     justify-content: center;
     flex-direction: column; }
     .App .App-header .header-img {
       margin-bottom: 10px; }
+    .App .App-header .logo {
+      width: 35vw;
+      height: auto; }
     .App .App-header .nav-links {
       display: flex;
       justify-content: center;
@@ -57,6 +60,9 @@ body {
 .Home p {
   font-size: 1.2em; }
 
+.headline {
+  margin-top: 200px !important; }
+
 .home-wrapper {
   position: relative;
   margin-top: 50px; }
@@ -73,8 +79,9 @@ body {
   width: 100vw; }
 
 .front-list {
-  text-align: center;
-  list-style-position: inside; }
+  text-align: left;
+  list-style-position: inside;
+  text-indent: 25vw; }
 
 .col1-h5 {
   margin-bottom: 0.9px !important; }
@@ -108,3 +115,35 @@ body {
 
 .about {
   margin: 20px; }
+
+.roterFaden-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.rf-img {
+  width: 20vw;
+  height: 20vw;
+  margin-left: 5vw;
+  margin-right: 5vw; }
+
+.faden-txt {
+  text-align: justify;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 20px; }
+
+.thead {
+  border: 1px solid black; }
+
+.table {
+  margin: 10px auto;
+  border: 1px solid black; }
+  .table th {
+    border: 1px solid black; }
+  .table td {
+    text-align: justify;
+    border: 1px solid black; }
+
+.indent {
+  text-indent: 65px; }
